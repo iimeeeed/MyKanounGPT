@@ -30,7 +30,7 @@ def parse_html_file(file_path):
         if "تفاصيل" in clean_row_text and 'bgcolor="#78a7b9"' in row_html:
             if current_decree is not None:
                 structured_data.append(current_decree)  # Save the previous decree
-            current_decree = {"level": 1, "details": []}
+            current_decree = {"level": 1, "details": [], 'actions':[]}
 
         elif 'color="Maroon"' in row_html:
             action = clean_row_text
