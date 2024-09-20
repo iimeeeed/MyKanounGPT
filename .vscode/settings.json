@@ -3,5 +3,6 @@
     "cSpell.enableFiletypes": [
         "bat",
         "csv"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "basic"
 }
